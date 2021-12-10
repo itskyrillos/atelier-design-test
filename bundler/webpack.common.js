@@ -25,36 +25,32 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
       },
 
       // Images
       {
         test: /\.(jpg|png|gif|svg)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'assets/images/',
-              name: '[name].[ext]'
-            }
-          }
-        ]
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/images/[hash].[ext]'
+        }
       },
 
       // Fonts
       {
         test: /\.(ttf|eot|woff|woff2)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'assets/fonts/',
-              name: '[name].[ext]'
-            }
-          }
-        ]
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/fonts/[hash].[ext]'
+        }
       }
+
     ]
   }
 }

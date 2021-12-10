@@ -1,0 +1,22 @@
+.nav {
+	display: flex;
+	width: 100%;
+	padding-left: 10vw;
+
+	&__left {
+	}
+	&__logo {
+	}
+	&__right {
+		display: block;
+	}
+	&__list {
+		display: flex;
+		&__item {
+		}
+	}
+	&__link {
+	}
+	&__btn {
+	}
+}

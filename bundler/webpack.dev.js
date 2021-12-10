@@ -11,7 +11,22 @@ module.exports = merge(commonConfiguration, {
       // CSS
       {
         test: /\.(sa|sc|c)ss$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+        use: ['style-loader', 'css-loader', {
+          loader: 'postcss-loader',
+          options: {
+            postcssOptions: {
+              plugins: [
+                [
+                  'postcss-preset-env',
+                  'autoprefixer',
+                  {
+                    // Options
+                  }
+                ]
+              ]
+            }
+          }
+        }, 'sass-loader']
       }
     ]
   }

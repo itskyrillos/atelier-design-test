@@ -17,7 +17,22 @@ module.exports = merge(
         // CSS
         {
           test: /\.(sa|sc|c)ss$/,
-          use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
+          use: [MiniCssExtractPlugin.loader, 'css-loader', {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    'postcss-preset-env',
+                    'autoprefixer',
+                    {
+                      // Options
+                    }
+                  ]
+                ]
+              }
+            }
+          }, 'sass-loader']
         }
       ]
     }
