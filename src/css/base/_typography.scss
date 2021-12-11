@@ -42,7 +42,7 @@
 		font-size: 2.125rem;
 		line-height: 2.938rem;
 		color: $black;
-		margin-bottom: 2.5rem;
+		margin-bottom: 1em;
 	}
 	&.--h2 {
 		font-family: $opensauce;
@@ -50,7 +50,7 @@
 		font-size: 1.625rem;
 		line-height: 2.625rem;
 		color: $black;
-		margin-bottom: 1.5rem;
+		margin-bottom: 1em;
 	}
 	&.--subtitle {
 		font-family: $opensauce;
@@ -75,4 +75,5 @@
 	font-size: 0.875rem;
 	line-height: 2rem;
 	color: $dark-brown;
+	margin-bottom: 3em;
 }
