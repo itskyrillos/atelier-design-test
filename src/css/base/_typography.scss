@@ -53,10 +53,23 @@
 		margin-bottom: 1em;
 	}
 	&.--subtitle {
+		position: relative;
 		font-family: $opensauce;
 		font-weight: 900;
 		font-size: 1.125rem;
 		color: $green;
+		letter-spacing: 2px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 4rem;
+			height: 3.063rem;
+			background: center / contain no-repeat url('../images/subtitle-icon.svg');
+			transform: translate(-50%, -70%);
+		}
 	}
 	&.--green {
 		color: $green;
@@ -64,7 +77,7 @@
 	&.--yellow {
 		color: $yellow;
 	}
-	&.--light {
+	&.--white {
 		color: $white;
 	}
 }
