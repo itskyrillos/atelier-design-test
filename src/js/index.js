@@ -1,2 +1,2 @@
-import '../css/main.scss'
 import './slider'
+import '../css/main.scss'

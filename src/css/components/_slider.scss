@@ -1,9 +1,30 @@
 .slider {
 	position: relative;
-	background-color: rgba($color: #f51313, $alpha: 0.2);
+	width: 80%;
+	margin-top: 6rem;
+	margin-bottom: 6rem;
 
-	&__wrapper {
-		background-color: rgba($color: #5dd439, $alpha: 0.2);
+	&__icon {
+		position: absolute;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		width: 6.25rem;
+		height: 6.25rem;
+		object-fit: contain;
+		object-position: center;
+		transform: translate(-50%, -50%);
+	}
+
+	.swiper {
+		border: 1px $white solid;
+		border-radius: 12px;
+	}
+
+	&__slide {
+		width: 100%;
+		padding: 3rem 2rem;
+		box-sizing: border-box;
 	}
 	&__text {
 		font-family: $opensauce;
@@ -22,13 +43,13 @@
 		font-size: 0.6rem;
 		color: $white;
 		text-decoration: underline;
-		transform: translate(10%, 50%);
+		transform: translate(10%, 200%);
 	}
 
 	&__btn {
 		display: flex;
 		position: absolute;
-		z-index: 30;
+		z-index: 10;
 		bottom: 0;
 		right: 0;
 		width: 7.063rem;
