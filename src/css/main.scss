@@ -2,9 +2,6 @@
 @import './abstracts/variables';
 @import './abstracts/mixins';
 
-// SWIPER
-// @import '../../node_modules/swiper/';
-
 // BASE
 @import './base/normalize';
 @import './base/global';
@@ -14,6 +11,7 @@
 @import './components/buttons';
 @import './components/links';
 @import './components/section';
+@import './components/slider';
 
 // LAYOUT
 @import './layout/header';
