@@ -1,16 +1,23 @@
 .link {
-	padding: 1.5em 2em;
-	background-color: $yellow;
-	font-family: $opensauce;
-	font-weight: 800;
-	font-size: 0.813rem;
-	color: $dark-brown;
-	text-decoration: none;
-	border-radius: 12px;
-	letter-spacing: 2px;
+  padding: 1.5em 2em;
+  background-color: $yellow;
+  font-family: $opensauce;
+  font-weight: 800;
+  font-size: 0.813rem;
+  text-align: center;
+  color: $dark-brown;
+  text-decoration: none;
+  border-radius: 12px;
+  letter-spacing: 2px;
+  box-sizing: border-box;
 
-	&.--green {
-		background-color: $green;
-		color: $white;
-	}
+  @include small {
+    display: block;
+    width: 100%;
+  }
+
+  &.--green {
+    background-color: $green;
+    color: $white;
+  }
 }

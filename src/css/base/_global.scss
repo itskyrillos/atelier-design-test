@@ -1,18 +1,23 @@
-body {
-	width: 100vw;
-	background-color: $beige;
-	overflow-x: hidden;
+html, body {
+  width: 100vw;
+  background-color: $beige;
+  overflow-x: hidden;
 }
 
 ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-	margin-right: auto;
-	margin-left: auto;
-	padding-right: 10vw;
-	padding-left: 10vw;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10vw;
+  padding-left: 10vw;
+
+  @include small {
+    padding-right: 7vw;
+    padding-left: 7vw;
+  }
 }

@@ -22,6 +22,10 @@
     border-radius: 0 0 0 12px;
     padding: 0 3rem;
 
+    @include small {
+      display: none;
+    }
+
     &__list {
       display: flex;
     }
@@ -40,17 +44,29 @@
   }
 
   &__link {
-    margin-right: 1rem;
+    margin-right: 1.5rem;
   }
 
   &__lang {
     position: relative;
-    margin-left: 1rem;
+    padding-left: 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 2rem;
+      width: 0.188rem;
+      background: center / cover no-repeat url("../images/stroke.svg");
+      transform: translate(0, -50%);
+    }
 
     &__btn {
       position: relative;
       background: transparent;
       border: none;
+      cursor: pointer;
 
       &::before {
         content: '';
@@ -77,7 +93,7 @@
       display: none;
       position: absolute;
       top: 100%;
-      left: 20%;
+      left: 45%;
     }
 
     &__link {

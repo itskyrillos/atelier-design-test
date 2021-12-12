@@ -4,8 +4,16 @@
 
 .layout {
 	display: flex;
+
+	@include small {
+		flex-direction: column;
+	}
 }
 
 .layout__item {
 	width: 50%;
+
+	@include small {
+		width: 100%;
+	}
 }

@@ -1,25 +1,6 @@
-@mixin sm {
-	@media only screen and (min-width:#{$large-phone}) {
-		@content;
-	}
+@mixin small {
+  @media only screen and (max-width: #{$small}) {
+    @content;
+  }
 }
-@mixin md {
-	@media only screen and (min-width:#{$tablet}) {
-		@content;
-	}
-}
-@mixin lg {
-	@media only screen and (min-width:#{$large-tablet}) {
-		@content;
-	}
-}
-@mixin xl {
-	@media only screen and (min-width:#{$desktop}) {
-		@content;
-	}
-}
-@mixin xxl {
-	@media only screen and (min-width:#{$large-desktop}) {
-		@content;
-	}
-}
+

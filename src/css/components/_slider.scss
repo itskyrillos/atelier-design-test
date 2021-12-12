@@ -4,6 +4,11 @@
   margin-top: 6rem;
   margin-bottom: 6rem;
 
+  @include small {
+    width: 90%;
+    margin: 6rem auto 6rem auto;
+  }
+
   &__icon {
     position: absolute;
     z-index: 10;
@@ -14,6 +19,10 @@
     object-fit: contain;
     object-position: center;
     transform: translate(-50%, -50%);
+
+    @include small {
+      transform: translate(-20%, -50%);
+    }
   }
 
   .swiper {
@@ -33,6 +42,10 @@
     font-size: 1.5rem;
     line-height: 2rem;
     color: $white;
+
+    @include small {
+      font-size: 1.125rem;
+    }
   }
 
   &__pagination {
@@ -45,6 +58,10 @@
     color: $white;
     text-decoration: underline;
     transform: translate(10%, 200%);
+
+    @include small {
+      transform: translate(-5%, 200%);
+    }
   }
 
   &__btn {
@@ -59,6 +76,11 @@
     background-color: $white;
     border-radius: 10px;
     overflow: hidden;
+
+    @include small {
+      transform: translate(20%, 50%);
+
+    }
 
     &::before {
       content: '';
