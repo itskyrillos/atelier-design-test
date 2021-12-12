@@ -19,23 +19,34 @@
 		background-color: $white;
 		border-radius: 0 0 0 12px;
 		padding: 0 3rem;
-	}
-	&__list {
-		display: flex;
-		&__item {
-			margin-right: 2rem;
+		&__list {
+			display: flex;
+			&__item {
+				margin-right: 2rem;
 
-			> a {
-				font-family: $opensauce;
-				font-weight: 800;
-				font-size: 0.813rem;
-				color: $dark-brown;
-				text-decoration: none;
+				> a {
+					font-family: $opensauce;
+					font-weight: 800;
+					font-size: 0.813rem;
+					color: $dark-brown;
+					text-decoration: none;
+				}
 			}
 		}
 	}
+
 	&__link {
 	}
-	&__btn {
+	&__lang {
+		&__btn {
+		}
+		&__text {
+		}
+		&__list {
+		}
+		&__item {
+		}
+		&__link {
+		}
 	}
 }
