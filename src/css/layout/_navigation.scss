@@ -5,6 +5,10 @@
   height: 100%;
   align-items: center;
 
+  @include small {
+    display: none;
+  }
+
   &__logo {
     width: 8.063rem;
     height: 2rem;
@@ -21,10 +25,6 @@
     background-color: $white;
     border-radius: 0 0 0 12px;
     padding: 0 3rem;
-
-    @include small {
-      display: none;
-    }
 
     &__list {
       display: flex;
@@ -120,5 +120,46 @@
         display: block;
       }
     }
+  }
+}
+
+.nav-mobile {
+  display: none;
+
+  @include small {
+    display: block;
+  }
+
+  &__logo {
+  }
+
+  &__btn {
+  }
+
+  &__content {
+  }
+
+  &__lang {
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__link {
+      &.--current {
+      }
+    }
+  }
+
+  &__menu {
+    &__list {
+    }
+
+    &__item {
+    }
+  }
+
+  &__link {
   }
 }
