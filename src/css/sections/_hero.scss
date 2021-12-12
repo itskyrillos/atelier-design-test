@@ -3,6 +3,9 @@
   width: 100%;
   padding-top: 2rem;
   padding-bottom: 5rem;
+  @include small {
+    padding-top: 5rem;
+  }
 
   &__layout {
     display: flex;

@@ -27,6 +27,13 @@
   font-weight: 500;
 }
 
+/*Regular*/
+@font-face {
+  src: url('#{$font-path}/OpenSauceSans-Regular.ttf') format('truetype');
+  font-family: 'OpenSauce Sans';
+  font-weight: 400;
+}
+
 /*Light*/
 @font-face {
   src: url('#{$font-path}/Metropolis-Light.otf') format('otf');
