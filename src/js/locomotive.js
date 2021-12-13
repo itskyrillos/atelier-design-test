@@ -6,6 +6,7 @@ const scroll = new LocomotiveScroll({
   smooth: true,
   multiplier: 0.8
 })
+
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     scroll.update()
@@ -16,7 +17,7 @@ window.addEventListener('resize', () => {
 })
 
 const target = document.querySelector('.home__about')
-const anchor = document.querySelector('.hero__scroll')
+const anchor = document.querySelector('.hero__anchor')
 
 anchor.addEventListener('click', () => {
   scroll.scrollTo(target)
