@@ -3,7 +3,8 @@ import 'locomotive-scroll/dist/locomotive-scroll.css'
 
 const scroll = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
-  smooth: true
+  smooth: true,
+  multiplier: 0.8
 })
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
