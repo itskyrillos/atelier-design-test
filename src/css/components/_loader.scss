@@ -1,0 +1,28 @@
+.loader {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: 30%;
+    height: 30%;
+    overflow: hidden;
+
+    @include small {
+      width: 60%;
+    }
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    background: center / contain no-repeat url("../images/logo-solarly.svg");
+  }
+}
