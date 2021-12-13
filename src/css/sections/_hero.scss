@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   padding-top: 2rem;
-  //padding-bottom: 3rem;
+  
   @include small {
     padding-top: 5rem;
   }
@@ -31,6 +31,7 @@
     width: 4.5rem;
     height: 4.5rem;
     background-color: $white;
+    border: none;
     border-radius: 12px;
     transform: translateX(-50%);
     box-shadow: 19px 19px 43px 0 hsla(0, 0%, 0%, 0.09);

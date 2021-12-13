@@ -1,4 +1,5 @@
 import './slider'
 import './navLang'
 import './navMobileToggle'
+import './locomotive'
 import '../css/main.scss'
