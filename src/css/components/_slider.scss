@@ -76,6 +76,7 @@
     background-color: $white;
     border-radius: 10px;
     overflow: hidden;
+    cursor: pointer;
 
     @include small {
       transform: translate(20%, 50%);
@@ -101,6 +102,10 @@
       position: relative;
       background-color: $white;
 
+      &:hover {
+        background-color: hsl(0, 0, 98);
+      }
+
       &::after {
         content: '';
         position: absolute;
@@ -119,6 +124,10 @@
       height: 100%;
       position: relative;
       background-color: $white;
+
+      &:hover {
+        background-color: hsl(0, 0, 98);
+      }
 
       &::after {
         content: '';

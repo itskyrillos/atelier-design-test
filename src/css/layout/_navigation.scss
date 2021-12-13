@@ -40,6 +40,11 @@
         font-size: 0.813rem;
         color: $dark-brown;
         text-decoration: none;
+
+        &:hover {
+          color: $yellow;
+
+        }
       }
     }
   }
