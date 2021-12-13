@@ -2,6 +2,7 @@ html, body {
   width: 100vw;
   background-color: $beige;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 ul {
