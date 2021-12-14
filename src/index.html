@@ -10,22 +10,27 @@
 
 <body>
 <div data-scroll-container>
+    <!-- LOADER -->
     <div class="loader">
         <div class="loader__container">
             <div class="loader__image"></div>
         </div>
     </div>
+    <!-- end LOADER -->
+
+    <!-- HEADER -->
     <header class="header" data-scroll-section>
+        <!-- NAVIGATION -->
         <nav class="nav">
             <a href="/"><img class="nav__logo" src="./images/logo-solarly.svg" alt=""></a>
 
             <div class="nav__menu">
                 <ul class="nav__menu__list">
-                    <li class="nav__menu__item"><a href="/">Solutions</a></li>
-                    <li class="nav__menu__item"><a href="/">À propos</a></li>
-                    <li class="nav__menu__item"><a href="/">Impact</a></li>
-                    <li class="nav__menu__item"><a href="/">Actualités</a></li>
-                    <li class="nav__menu__item"><a href="/">FAQ</a></li>
+                    <li class="nav__menu__item"><a class="nav__menu__link" href="/">Solutions</a></li>
+                    <li class="nav__menu__item"><a class="nav__menu__link" href="/">À propos</a></li>
+                    <li class="nav__menu__item"><a class="nav__menu__link" href="/">Impact</a></li>
+                    <li class="nav__menu__item"><a class="nav__menu__link" href="/">Actualités</a></li>
+                    <li class="nav__menu__item"><a class="nav__menu__link" href="/">FAQ</a></li>
                 </ul>
                 <a class="nav__link link" href="">Contact</a>
                 <div class="nav__lang">
@@ -36,13 +41,15 @@
                 </div>
             </div>
         </nav>
+        <!-- end NAVIGATION -->
+
+        <!-- MOBILE NAVIGATION -->
         <nav class="nav-mobile ">
             <div class="nav-mobile__top">
                 <a href="/"><img class="nav-mobile__logo" src="./images/logo-solarly.svg" alt=""></a>
                 <button class="nav-mobile__btn"><span class="nav-mobile__btn__menu">Menu</span><span
                         class="nav-mobile__btn__close">Close</span></button>
             </div>
-
             <div class="nav-mobile__content">
                 <div class="nav-mobile__lang">
                     <ul class="nav-mobile__lang__list">
@@ -55,18 +62,23 @@
                     </ul>
                 </div>
                 <ul class="nav-mobile__menu__list">
-                    <li class="nav-mobile__menu__item --current"><a href="/">Solutions</a></li>
-                    <li class="nav-mobile__menu__item"><a href="/">À propos</a></li>
-                    <li class="nav-mobile__menu__item"><a href="/">Impact</a></li>
-                    <li class="nav-mobile__menu__item"><a href="/">Actualités</a></li>
-                    <li class="nav-mobile__menu__item"><a href="/">FAQ</a></li>
+                    <li class="nav-mobile__menu__item"><a class="nav-mobile__menu__link --current"
+                                                          href="/">Solutions</a></li>
+                    <li class="nav-mobile__menu__item"><a class="nav-mobile__menu__link" href="/">À propos</a></li>
+                    <li class="nav-mobile__menu__item"><a class="nav-mobile__menu__link" href="/">Impact</a></li>
+                    <li class="nav-mobile__menu__item"><a class="nav-mobile__menu__link" href="/">Actualités</a></li>
+                    <li class="nav-mobile__menu__item"><a class="nav-mobile__menu__link" href="/">FAQ</a></li>
                 </ul>
                 <a class="nav-mobile__link link" href="">Contact</a>
             </div>
         </nav>
-    </header>
-    <main>
+        <!-- end MOBILE NAVIGATION -->
 
+    </header>
+    <!-- end HEADER -->
+
+    <main>
+        <!-- HERO -->
         <header class="hero" data-scroll-section>
             <div class="container hero__layout">
                 <div class="hero__left">
@@ -87,8 +99,9 @@
                 </div>
             </div>
         </header>
+        <!-- end HERO -->
 
-
+        <!-- HOME ABOUT SECTION -->
         <section class="section home__about" data-scroll-section>
             <div class="container">
                 <div class="layout">
@@ -113,7 +126,9 @@
                 </div>
             </div>
         </section>
+        <!-- end HOME ABOUT SECTION -->
 
+        <!-- HOME BENEFITS SECTION -->
         <section class="section home__benefits" data-scroll-section>
             <div class="container">
                 <div class="layout">
@@ -123,7 +138,7 @@
                                     Solarly</span></h2>
                         <div class="slider">
                             <img class="slider__icon" src="./images/informative.svg" alt="">
-                            <div class="swiper">
+                            <div class="swiper slider__container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide slider__slide">
                                         <p class="slider__text">Connectée et intelligente, permettant un suivi à
@@ -142,27 +157,24 @@
                                             distance</p>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="slider__pagination"></div>
-
                             <div class="slider__btn">
                                 <div class="slider__btn__prev">previous</div>
                                 <div class="slider__btn__next">next</div>
                             </div>
                         </div>
-                        <a class="link --green home__benefits__link" href="">En savoir plus</a>
-
+                        <a class="link --green" href="">En savoir plus</a>
                     </div>
                     <div class="layout__item"><img class="home__benefits__image" data-scroll data-scroll-speed="1.1"
                                                    src="./images/image-avantages.png"
                                                    alt="">
                         <img class="home__benefits__image--mobile" src="./images/image-avantages-mobile.png"
                              alt=""></div>
-
                 </div>
             </div>
         </section>
+        <!-- end BENEFITS SECTION -->
 
     </main>
 </div>

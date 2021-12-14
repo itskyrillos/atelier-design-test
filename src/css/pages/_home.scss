@@ -1,121 +1,125 @@
-.home {
-  &__about {
+.home__about {
+  position: relative;
+  z-index: 20;
+}
+
+.home__about__image {
+  position: relative;
+  width: 100%;
+  height: 115%;
+  margin-left: -10vw;
+  transform: translateY(15%);
+
+  @include small {
+    width: 120%;
+    margin-bottom: 8rem;
+    transform: translateY(0);
+  }
+
+  @include large {
+    height: 130%;
+  }
+
+  > img {
     position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 0 16px 16px 0;
     z-index: 20;
 
-    &__image {
-      position: relative;
-      width: 100%;
-      height: 115%;
-      margin-left: -10vw;
-      transform: translateY(15%);
-      @include small {
-        width: 120%;
-        margin-bottom: 8rem;
-        transform: translateY(0);
-      }
+    @include small {
+      border-radius: 0;
 
-      > img {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: right;
-        border-radius: 0 16px 16px 0;
-        z-index: 20;
-
-        @include small {
-          border-radius: 0;
-
-        }
-      }
-
-      &::before {
-        content: '';
-        position: absolute;
-        z-index: 10;
-        top: 10%;
-        left: 0;
-        width: 110%;
-        height: 100%;
-        background-color: $white;
-        border-radius: 0 16px 16px 0;
-
-        @include small {
-          display: none;
-        }
-      }
-    }
-
-    &__text {
-      box-sizing: border-box;
-      padding-left: 3rem;
-
-      @include small {
-        padding-left: 0;
-      }
     }
   }
 
-  &__benefits {
-    position: relative;
+  &::before {
+    content: '';
+    position: absolute;
     z-index: 10;
-    background-color: $black;
-    overflow: hidden;
+    top: 10%;
+    left: 0;
+    width: 110%;
+    height: 100%;
+    background-color: $white;
+    border-radius: 0 16px 16px 0;
 
-    &::after {
-      content: '';
-      position: absolute;
-      z-index: 10;
-      top: 50%;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      background: center / contain no-repeat url('../images/circle-solutions-bg.svg');
-      transform: translate(75%, -50%) scale(1.8);
-
-      @include small {
-        bottom: 0;
-        transform: translate(0, 110%) scale(2);
-        width: 100vw;
-        height: 100vw;
-      }
-    }
-
-    > .container {
-      position: relative;
-      z-index: 20;
-    }
-
-    &__title {
-      margin-top: 6rem;
-      padding-right: 20%;
-
-      @include small {
-        margin-top: 0;
-        padding-right: 0;
-        text-align: center;
-      }
-    }
-
-    &__image {
-      display: block;
-      margin-top: 6rem;
-      width: 100%;
-
-      @include small {
-        display: none;
-      }
-    }
-
-    &__image--mobile {
+    @include small {
       display: none;
-      margin-top: 6rem;
-      width: 100%;
-      @include small {
-        display: block;
-
-      }
     }
   }
 }
+
+.home__about__text {
+  box-sizing: border-box;
+  padding-left: 3rem;
+
+  @include small {
+    padding-left: 0;
+  }
+}
+
+.home__benefits {
+  position: relative;
+  z-index: 10;
+  background-color: $black;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: center / contain no-repeat url('../images/circle-solutions-bg.svg');
+    transform: translate(75%, -50%) scale(1.8);
+
+    @include small {
+      bottom: 0;
+      transform: translate(0, 110%) scale(2);
+      width: 100vw;
+      height: 100vw;
+    }
+  }
+
+  > .container {
+    position: relative;
+    z-index: 20;
+  }
+}
+
+.home__benefits__title {
+  margin-top: 6rem;
+  padding-right: 20%;
+
+  @include small {
+    margin-top: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+.home__benefits__image {
+  display: block;
+  margin-top: 6rem;
+  width: 100%;
+
+  @include small {
+    display: none;
+  }
+}
+
+.home__benefits__image--mobile {
+  display: none;
+  margin-top: 6rem;
+  width: 100%;
+
+  @include small {
+    display: block;
+  }
+}
+

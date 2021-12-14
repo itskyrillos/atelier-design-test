@@ -21,6 +21,10 @@
     width: 100%;
   }
 
+  @include large {
+    font-size: 1rem;
+  }
+
   &.--green {
     background-color: $green;
     color: $white;

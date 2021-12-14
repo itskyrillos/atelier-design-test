@@ -51,6 +51,11 @@
     color: $black;
     margin-bottom: 1em;
 
+    @include large {
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+
     @include small {
       font-size: 1.75rem;
       line-height: 2.438rem;
@@ -69,6 +74,11 @@
       font-size: 1.375rem;
       line-height: 2.188rem;
     }
+
+    @include large {
+      font-size: 2.2rem;
+      line-height: 3.5rem;
+    }
   }
 
   &.--subtitle {
@@ -81,6 +91,10 @@
 
     @include small {
       font-size: 0.938rem;
+    }
+
+    @include large {
+      font-size: 1.5rem;
     }
 
     &::before {
@@ -119,4 +133,9 @@
   line-height: 2rem;
   color: $dark-brown;
   margin-bottom: 3em;
+
+  @include large {
+    font-size: 1.1rem;
+    line-height: 2.3rem;
+  }
 }

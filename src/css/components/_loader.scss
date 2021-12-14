@@ -9,20 +9,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  &__container {
-    width: 30%;
-    height: 30%;
-    overflow: hidden;
+.loader__container {
+  width: 30%;
+  height: 30%;
+  overflow: hidden;
 
-    @include small {
-      width: 60%;
-    }
+  @include small {
+    width: 60%;
   }
+}
 
-  &__image {
-    height: 100%;
-    width: 100%;
-    background: center / contain no-repeat url("../images/logo-solarly.svg");
-  }
+.loader__image {
+  height: 100%;
+  width: 100%;
+  background: center / contain no-repeat url("../images/logo-solarly.svg");
 }

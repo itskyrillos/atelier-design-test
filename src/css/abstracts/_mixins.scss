@@ -4,3 +4,9 @@
   }
 }
 
+@mixin large {
+  @media only screen and (min-width: #{$large}) {
+    @content;
+  }
+}
+
