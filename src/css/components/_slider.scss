@@ -152,7 +152,7 @@
     width: 0.3em;
     height: 0.7em;
     background: center / contain no-repeat url('../images/arrow.svg');
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 

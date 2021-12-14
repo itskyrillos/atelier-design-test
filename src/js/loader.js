@@ -22,4 +22,14 @@ tl.from('.loader__image',
   ease: 'power4.out',
   transformOrigin: 'top left',
   scaleY: 0
-}, '>-0.1')
+}, '>-0.1').from('.hero__left', {
+  duration: 1,
+  ease: 'power4.inOut',
+  opacity: 0,
+  immediateRender: true
+}, '>-1').from('.hero__right', {
+  duration: 1,
+  ease: 'power4.inOut',
+  opacity: 0,
+  immediateRender: true
+}, '>-0.5')

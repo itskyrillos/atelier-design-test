@@ -22,3 +22,12 @@ ul {
     padding-left: 7vw;
   }
 }
+
+.hidden {
+  opacity: 0;
+  transition: opacity 1.4s ease-in-out;
+}
+
+.scroll-reveal {
+  opacity: 1;
+}
