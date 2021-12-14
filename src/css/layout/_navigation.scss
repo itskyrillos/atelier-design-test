@@ -73,6 +73,18 @@
     background: center / cover no-repeat url("../images/stroke.svg");
     transform: translate(0, -50%);
   }
+
+  &.--open {
+    .nav__lang__btn {
+      &::before {
+        transform: translate(100%, -50%) rotate(-90deg);
+      }
+    }
+
+    .nav__lang__list {
+      display: block;
+    }
+  }
 }
 
 .nav__lang__btn {
@@ -126,18 +138,6 @@
   @include large {
     font-size: 1rem;
   }
-
-  &.--open {
-    .nav__lang__btn {
-      &::before {
-        transform: translate(100%, -50%) rotate(-90deg);
-      }
-    }
-
-    .nav__lang__list {
-      display: block;
-    }
-  }
 }
 
 
@@ -150,6 +150,36 @@
 
   @include small {
     display: block;
+  }
+
+  &.--open {
+    .nav-mobile__btn__menu {
+      display: none;
+    }
+
+    .nav-mobile__btn__close {
+      display: block;
+    }
+
+    .nav-mobile__content {
+      top: 0;
+      transition: top 0.4s ease-out;
+    }
+
+    .nav-mobile__lang {
+      opacity: 1;
+      transition: opacity 0.2s 0.4s ease-in-out;
+    }
+
+    .nav-mobile__menu__list {
+      opacity: 1;
+      transition: opacity 0.3s 0.4s ease-in-out;
+    }
+
+    .nav-mobile__link {
+      opacity: 1;
+      transition: opacity 0.4s 0.4s ease-in-out;
+    }
   }
 }
 
@@ -291,36 +321,6 @@
       height: 0.25rem;
       background: center / contain no-repeat url("../images/mobile-stroke-current.svg");
       transform: translateY(-50%);
-    }
-  }
-
-  &.--open {
-    .nav-mobile__btn__menu {
-      display: none;
-    }
-
-    .nav-mobile__btn__close {
-      display: block;
-    }
-
-    .nav-mobile__content {
-      top: 0;
-      transition: top 0.4s ease-out;
-    }
-
-    .nav-mobile__lang {
-      opacity: 1;
-      transition: opacity 0.2s 0.4s ease-in-out;
-    }
-
-    .nav-mobile__menu__list {
-      opacity: 1;
-      transition: opacity 0.3s 0.4s ease-in-out;
-    }
-
-    .nav-mobile__link {
-      opacity: 1;
-      transition: opacity 0.4s 0.4s ease-in-out;
     }
   }
 }
